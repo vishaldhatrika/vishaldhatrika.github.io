@@ -97,8 +97,15 @@ loader.load("https://immersive-web.github.io/webxr-samples/media/gltf/reticle/re
   let flower;
   loader.load("https://cuisine-haveli.000webhostapp.com/media/Orbiter.gltf", function(gltf) {
   flower = gltf.scene;
+      scene.add(flower);
+
   });
+  
+  
+  
   //new code ends
+  
+  
   session.addEventListener("select", (event) => {
   if (flower) {
     const clone = flower.clone();

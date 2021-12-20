@@ -12,12 +12,36 @@
 
 </head>
 
+    
 <body>
+    
+    
+    
+    
     <model-viewer
         alt="HireCar AR"
         src="https://vishaldhatrika.me/webxr/scene.glb" ios-src="https://vishaldhatrika.me/webxr/scene.usdz" ar
         ar-modes="webxr scene-viewer quick-look" poster="https://vishaldhatrika.me/webxr/poster.webp" seamless-poster
         shadow-intensity="1" camera-controls></model-viewer>
-</body>
+
+ <style>
+     model-viewer{
+     width:70vw;
+     
+     border-radius:10px;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition:  box-shadow 0.2s;
+         
+         
+     }
+     model-viewer:hover{
+         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+         transition:  box-shadow 0.2s;
+     }
+    </style>
+    
+    
+    
+    </body>
 
 </html>

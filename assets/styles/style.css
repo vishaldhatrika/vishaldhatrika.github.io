@@ -1,3 +1,14 @@
 body {
-    background: rgba(37, 157, 238, 0.63);
+    background: rgba(37, 157, 238, 0.486);
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+}
+
+h1 {
+    font-family: 'Arapey', serif;
+}
+
+span {
+    padding-top: 17px;
+    padding-left: 14px;
 }

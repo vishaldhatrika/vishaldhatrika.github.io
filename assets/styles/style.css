@@ -12,3 +12,19 @@ span {
     padding-top: 17px;
     padding-left: 14px;
 }
+
+.ulDecor {
+    padding-left: 0;
+    padding-bottom:15px;
+    background: transparent;
+    background-position-y: bottom;
+    background-size: 0 3px;
+    transition: background 1s ease;
+}
+
+.ulDecor:hover {
+    background: linear-gradient( 90deg, red, pink, orange, yellow, pink, magenta,purple, blue);
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}

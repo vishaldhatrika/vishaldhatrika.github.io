@@ -15,7 +15,7 @@ span {
 
 .ulDecor {
     padding-left: 0;
-    padding-bottom:15px;
+   
     background: transparent;
     background-position-y: bottom;
     background-size: 0 3px;
@@ -23,6 +23,7 @@ span {
 }
 .ulDecor a, .ulDecor a:hover, .ulDecor a:link, .ulDecor a:active, .ulDecor a:visited{
 text-decoration:none;
+    color:black;
 }
 .ulDecor:hover {
     background: linear-gradient( 90deg, red, pink, orange, yellow, pink, magenta,purple, blue);

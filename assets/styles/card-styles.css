@@ -96,6 +96,10 @@
         grid-column-gap: 20px;
     }
 
+    .codingProfCont .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .container {
         max-width: 92vw;
     }
@@ -107,6 +111,10 @@
         grid-column-gap: 30px;
     }
 
+    .codingProfCont .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     .container {
         max-width: 88vw;
     }
@@ -116,6 +124,10 @@
     .cards {
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 40px;
+    }
+
+    .codingProfCont .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .container {

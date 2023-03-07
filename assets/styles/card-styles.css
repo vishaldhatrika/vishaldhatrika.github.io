@@ -5,7 +5,8 @@
     --black: #2b2d42;
     --white: #fff;
     --thumb: #edf2f4;
-    --darkblue: #021a94;
+    --blue: #286ef1;
+    --lightblue: #578ff8;
     --darkerblue: #00086c;
 }
 
@@ -59,7 +60,7 @@
 
 .card:hover {
     color: var(--white);
-    background: var(--darkblue);
+    background: var(--blue);
 }
 
 .card .card-title {
@@ -82,7 +83,7 @@
     display: inline-block;
     text-decoration: none;
     color: white;
-    background: var(--darkblue);
+    background: var(--lightblue);
     padding: 6px 12px;
     border-radius: 8px;
     transition: background 0.2s;

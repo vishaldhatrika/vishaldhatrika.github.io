@@ -5,6 +5,8 @@
     --black: #2b2d42;
     --white: #fff;
     --thumb: #edf2f4;
+    --darkblue: #021a94;
+    --darkerblue: #00086c;
 }
 
 
@@ -57,7 +59,7 @@
 
 .card:hover {
     color: var(--white);
-    background: var(--orange);
+    background: var(--darkblue);
 }
 
 .card .card-title {
@@ -80,14 +82,14 @@
     display: inline-block;
     text-decoration: none;
     color: white;
-    background: var(--orange);
+    background: var(--darkblue);
     padding: 6px 12px;
     border-radius: 8px;
     transition: background 0.2s;
 }
 
 .card:hover .card-link {
-    background: var(--darkorange);
+    background: var(--orange);
 }
 
 @media (min-width: 500px) {

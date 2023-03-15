@@ -8,6 +8,7 @@
     --blue: #286ef1;
     --lightblue: #578ff8;
     --darkerblue: #00086c;
+
 }
 
 
@@ -136,4 +137,37 @@
     .container {
         max-width: 85vw;
     }
+}
+
+.footer-anchor {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #286ef15e;
+    margin-bottom: 6px;
+    padding: 6px;
+}
+
+.footer-anchor img {
+    display: inline;
+    vertical-align: middle;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.footer-anchor span {
+    display: inline;
+    vertical-align: middle;
+}
+
+.footer-anchor:link,
+.footer-anchor:visited {
+    color: black;
+}
+
+.footer-anchor:hover,
+.footer-anchor:active {
+    background-color: var(--darkerblue);
+    color: white;
 }

@@ -7,27 +7,3 @@ body {
 h1 {
     font-family: 'Arapey', serif;
 }
-
-span {
-    padding-top: 17px;
-    padding-left: 14px;
-}
-
-.ulDecor {
-    padding-left: 0;
-   
-    background: transparent;
-    background-position-y: bottom;
-    background-size: 0 3px;
-    transition: background 1s ease;
-}
-.ulDecor a, .ulDecor a:hover, .ulDecor a:link, .ulDecor a:active, .ulDecor a:visited{
-text-decoration:none;
-    color:black;
-}
-.ulDecor:hover {
-    background: linear-gradient( 90deg, red, pink, orange, yellow, pink, magenta,purple, blue);
-    background-size: 100% 3px;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-}

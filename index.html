@@ -4,9 +4,24 @@
 <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
       <title>Vishal Dhatrika's Portfolio</title>
+
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
 
       <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
 
@@ -20,198 +35,269 @@
       <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 
 
+
+      <link rel="stylesheet" href="assets/styles/card-styles.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navUlId">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" id="navId">
+            <a class="navbar-brand" href="#">
+                  <img src="assets/images/icon.png" width="45px" height="45px" class="d-inline-block align-middle"
+                        alt="">
+                  <span class="align-middle">Vishal Dhatrika</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto" id="navUlId">
+                        <li class="nav-item">
+                              <a class="nav-link mr-1" href="#softdev">Software Development</a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link mr-1" href="#coding">Competitive Coding</a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link mr-1" href="#creativity">Creativity</a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link mr-1" href="#socials">Socials</a>
+                        </li>
+                  </ul>
+            </div>
+      </nav>
 
-      <h1> Hey there! I'm Vishal Dhatrika </h1>
+      <div>
+            <!-- <h1> Hey there! I'm Vishal Dhatrika </h1> -->
+            <br>
+            Technology. Engineering. Art. Innovation.<br><br>
+            <a href="mailto: vd@vishaldhatrika.me">vd@vishaldhatrika.me</a>
 
-      Technology. Engineering. Art. Innovation.<br>
-      <a href="mailto: vd@vishaldhatrika.me">vd@vishaldhatrika.me</a>
+
+            <br><br>
 
 
-      <br>
-      <link rel="stylesheet" href="assets/styles/card-styles.css">
 
-      <div class="container">
-            <h4>My Projects</h4>
-            <ul class="cards">
-                  <li class="card">
-                        <div>
-                              <h3 class="card-title">BlockCertify</h3>
-                              <div class="card-content">
-                                    <p>A blockchain based solution to prevent certificate and document fraud (Patent
-                                          Pending)</p>
+            <hr>
+            <div class="container">
+                  <h4 id="softdev">Software Development</h4>
+                  <h5>My Projects</h5>
+                  <ul class="cards">
+                        <li class="card">
+                              <div>
+                                    <h3 class="card-title">BlockCertify</h3>
+                                    <div class="card-content">
+                                          <p>A blockchain based solution to prevent certificate and document fraud
+                                                (Patent
+                                                Pending)</p>
+                                    </div>
                               </div>
-                        </div>
-                        <div class="card-link-wrapper">
-                              <a target="_blank" href="https://blockcertifyproject.github.io/" class="card-link">Project
-                                    Link</a>
-                        </div>
-                  </li>
-                  <li class="card">
-                        <div>
-                              <h3 class="card-title">Cuisine Haveli - Restaurant Management site</h3>
-                              <div class="card-content">
-                                    <p>A restaurant management website catering orders, deliveries, table reservation
-                                          and more</p>
+                              <div class="card-link-wrapper">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                          href="https://blockcertifyproject.github.io/" class="card-link">Project
+                                          Link</a>
                               </div>
-                        </div>
-                        <div class="card-link-wrapper">
-                              <a target="_blank" href="https://cuisinehaveli.000webhostapp.com/"
-                                    class="card-link">Project Link</a>
-                        </div>
-                  </li>
-                  <li class="card">
-                        <div>
-                              <h3 class="card-title">JS Clock in Browser</h3>
-                              <div class="card-content">
-                                    <p>A simple clock on your browser</p>
+                        </li>
+                        <li class="card">
+                              <div>
+                                    <h3 class="card-title">Cuisine Haveli - Restaurant Management site</h3>
+                                    <div class="card-content">
+                                          <p>A restaurant management website catering orders, deliveries, table
+                                                reservation
+                                                and more</p>
+                                    </div>
                               </div>
-                        </div>
-                        <div class="card-link-wrapper">
-                              <a target="_blank" href="https://vishaldhatrika.me/jsclock/" class="card-link">Project
-                                    Link</a>
-                        </div>
-                  </li>
-                  <li class="card">
-                        <div>
-                              <h3 class="card-title">Augmented Reality Demo</h3>
-                              <div class="card-content">
-                                    <p>Cross Platform support on iOS, Android, Windows and MacOS devices. Renders 3-D
-                                          viewer where AR is unsupported.</p>
+                              <div class="card-link-wrapper">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                          href="https://cuisinehaveli.000webhostapp.com/" class="card-link">Project
+                                          Link</a>
                               </div>
-                        </div>
-                        <div class="card-link-wrapper">
-                              <a target="_blank" href="https://vishaldhatrika.me/ar-demo/" class="card-link">Project
-                                    Link</a>
-                        </div>
-                  </li>
-                  <li class="card">
-                        <div>
-                              <h3 class="card-title">This website? &#129300;</h3>
-                              <div class="card-content">
-                                    <p>HTML, CSS. Hosted on GitHub Pages. Domain registered,
-                                          DNS and MX maintained with a registrar.</p>
+                        </li>
+                        <li class="card">
+                              <div>
+                                    <h3 class="card-title">JS Clock in Browser</h3>
+                                    <div class="card-content">
+                                          <p>A simple clock on your browser</p>
+                                    </div>
                               </div>
-                        </div>
-                        <div class="card-link-wrapper">
-                              <a target="_blank" href="https://github.com/vishaldhatrika/vishaldhatrika.github.io"
-                                    class="card-link">GitHub
-                                    Link</a>
-                        </div>
-                  </li>
+                              <div class="card-link-wrapper">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                          href="https://vishaldhatrika.me/jsclock/" class="card-link">Project
+                                          Link</a>
+                              </div>
+                        </li>
+                        <li class="card">
+                              <div>
+                                    <h3 class="card-title">Augmented Reality Demo</h3>
+                                    <div class="card-content">
+                                          <p>Cross Platform support on iOS, Android, Windows and MacOS devices. Renders
+                                                3-D
+                                                viewer where AR is unsupported.</p>
+                                    </div>
+                              </div>
+                              <div class="card-link-wrapper">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                          href="https://vishaldhatrika.me/ar-demo/" class="card-link">Project
+                                          Link</a>
+                              </div>
+                        </li>
+                        <li class="card">
+                              <div>
+                                    <h3 class="card-title">This website? &#129300;</h3>
+                                    <div class="card-content">
+                                          <p>HTML, CSS. Hosted on GitHub Pages. Domain registered,
+                                                DNS and MX maintained with a registrar.</p>
+                                    </div>
+                              </div>
+                              <div class="card-link-wrapper">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                          href="https://github.com/vishaldhatrika/vishaldhatrika.github.io"
+                                          class="card-link">GitHub
+                                          Link</a>
+                              </div>
+                        </li>
 
-            </ul>
+                  </ul>
+            </div>
+            <br>
+            <div class="container">
+                  <h5>GitHub</h5>
+                  <a class="footer-anchor" target="_blank" rel="noopener noreferrer"
+                        href="https://github.com/vishaldhatrika">
+                        <img src="assets/images/gh.png" alt="GitHub"><span>@vishaldhatrika</span>
+                  </a>
+            </div>
+            <br><br>
+            <hr>
+            <div class="container codingProfCont">
+                  <h4 id="coding">Competitive Coding</h4>
+                  <h5>Profile Links</h5>
+                  <ul class="cards">
+                        <li class="card">
+                              <div>
+                                    <h3 class="card-title">HackerRank</h3>
+                                    <div class="card-content"></div>
+                              </div>
+                              <div class="card-link-wrapper">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                          href="https://www.hackerrank.com/dvishal35" class="card-link">Profile
+                                          Link</a>
+                              </div>
+                        </li>
+                        <li class="card">
+                              <div>
+                                    <h3 class="card-title">CodeChef</h3>
+                                    <div class="card-content"></div>
+                              </div>
+                              <div class="card-link-wrapper">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                          href="https://www.codechef.com/users/vishaldhatrika" class="card-link">Profile
+                                          Link</a>
+                              </div>
+                        </li>
+                        <li class="card">
+                              <div>
+                                    <h3 class="card-title">CodeForces</h3>
+                                    <div class="card-content"></div>
+                              </div>
+                              <div class="card-link-wrapper">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                          href="https://codeforces.com/profile/vishaldhatrika" class="card-link">Profile
+                                          Link</a>
+                              </div>
+                        </li>
+                        <li class="card">
+                              <div>
+                                    <h3 class="card-title">LeetCode</h3>
+                                    <div class="card-content"></div>
+                              </div>
+                              <div class="card-link-wrapper">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                          href="https://leetcode.com/vishaldhatrika/" class="card-link">Profile
+                                          Link</a>
+                              </div>
+                        </li>
+                        <li class="card">
+                              <div>
+                                    <h3 class="card-title">Spoj</h3>
+                                    <div class="card-content"></div>
+                              </div>
+                              <div class="card-link-wrapper">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                          href="https://www.spoj.com/users/vishaldhatrika/" class=" card-link">Profile
+                                          Link</a>
+                              </div>
+                        </li>
+                        <li class="card">
+                              <div>
+                                    <h3 class="card-title">InterviewBit</h3>
+                                    <div class="card-content"></div>
+                              </div>
+                              <div class="card-link-wrapper">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                          href="https://www.interviewbit.com/profile/vishaldhatrika"
+                                          class="card-link">Profile
+                                          Link</a>
+                              </div>
+                        </li>
+                        <li class="card">
+                              <div>
+                                    <h3 class="card-title">Smart Interviews</h3>
+                                    <div class="card-content"></div>
+                              </div>
+                              <div class="card-link-wrapper">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                          href="https://smartinterviews.in/profile/dvishal35" class="card-link">Profile
+                                          Link</a>
+                              </div>
+                        </li>
+                        <li class="card">
+                              <div>
+                                    <h3 class="card-title">SmartInterviews SmartCoder</h3>
+                                    <div class="card-content"></div>
+                              </div>
+                              <div class="card-link-wrapper">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                          href="https://smartinterviews.in/certificate/955a7c78"
+                                          class="card-link">Certificate
+                                          Link</a>
+                              </div>
+                        </li>
+                  </ul>
+            </div>
+            <br><br>
+            <hr>
+            <div class="container">
+
+                  <h4 id="creativity">Creativity</h4>
+                  <h5>Links</h5>
+                  <a class="footer-anchor" target="_blank" rel="noopener noreferrer"
+                        href="http://design.vishaldhatrika.me">
+                        <img src="assets/images/pi.png" alt="Pinterest"><span>design.vishaldhatrika.me</span>
+                  </a>
+                  <a class="footer-anchor" target="_blank" rel="noopener noreferrer"
+                        href="https://blog.vishaldhatrika.me">
+                        <img src="assets/images/bl.png" alt="Blog"><span>blog.vishaldhatrika.me</span>
+                  </a>
+
+            </div>
+            <br><br>
+            <hr>
+            <div class="container">
+                  <h4 id="socials">Socials</h4>
+                  <h5>Links</h5>
+                  <a class="footer-anchor" target="_blank" rel="noopener noreferrer"
+                        href="https://instagram.com/vishaldhatrika">
+                        <img src="assets/images/ig.png" alt="Instagram"><span>@vishaldhatrika</span>
+                  </a>
+                  <a class="footer-anchor" target="_blank" rel="noopener noreferrer"
+                        href="https://linkedin.com/in/vishaldhatrika">
+                        <img src="assets/images/li.png" alt="LinkedIn"><span>@vishaldhatrika</span>
+                  </a>
+
+            </div>
       </div>
-      <br>
-
-      <div class="container codingProfCont">
-            <h4>Competitive Coding Profiles</h4>
-            <ul class="cards">
-                  <li class="card">
-                        <div>
-                              <h3 class="card-title">HackerRank</h3>
-                              <div class="card-content"></div>
-                        </div>
-                        <div class="card-link-wrapper">
-                              <a target="_blank" href="https://www.hackerrank.com/dvishal35" class="card-link">Profile
-                                    Link</a>
-                        </div>
-                  </li>
-                  <li class="card">
-                        <div>
-                              <h3 class="card-title">CodeChef</h3>
-                              <div class="card-content"></div>
-                        </div>
-                        <div class="card-link-wrapper">
-                              <a target="_blank" href="https://www.codechef.com/users/vishaldhatrika"
-                                    class="card-link">Profile Link</a>
-                        </div>
-                  </li>
-                  <li class="card">
-                        <div>
-                              <h3 class="card-title">CodeForces</h3>
-                              <div class="card-content"></div>
-                        </div>
-                        <div class="card-link-wrapper">
-                              <a target="_blank" href="https://codeforces.com/profile/vishaldhatrika"
-                                    class="card-link">Profile Link</a>
-                        </div>
-                  </li>
-                  <li class="card">
-                        <div>
-                              <h3 class="card-title">LeetCode</h3>
-                              <div class="card-content"></div>
-                        </div>
-                        <div class="card-link-wrapper">
-                              <a target="_blank" href="https://leetcode.com/vishaldhatrika/" class="card-link">Profile
-                                    Link</a>
-                        </div>
-                  </li>
-                  <li class="card">
-                        <div>
-                              <h3 class="card-title">Spoj</h3>
-                              <div class="card-content"></div>
-                        </div>
-                        <div class="card-link-wrapper">
-                              <a target="_blank" href="https://www.spoj.com/users/vishaldhatrika/"
-                                    class=" card-link">Profile Link</a>
-                        </div>
-                  </li>
-                  <li class="card">
-                        <div>
-                              <h3 class="card-title">InterviewBit</h3>
-                              <div class="card-content"></div>
-                        </div>
-                        <div class="card-link-wrapper">
-                              <a target="_blank" href="https://www.interviewbit.com/profile/vishaldhatrika"
-                                    class="card-link">Profile
-                                    Link</a>
-                        </div>
-                  </li>
-                  <li class="card">
-                        <div>
-                              <h3 class="card-title">Smart Interviews</h3>
-                              <div class="card-content"></div>
-                        </div>
-                        <div class="card-link-wrapper">
-                              <a target="_blank" href="https://smartinterviews.in/profile/dvishal35"
-                                    class="card-link">Profile Link</a>
-                        </div>
-                  </li>
-                  <li class="card">
-                        <div>
-                              <h3 class="card-title">SmartInterviews SmartCoder</h3>
-                              <div class="card-content"></div>
-                        </div>
-                        <div class="card-link-wrapper">
-                              <a target="_blank" href="https://smartinterviews.in/certificate/955a7c78"
-                                    class="card-link">Certificate
-                                    Link</a>
-                        </div>
-                  </li>
-            </ul>
-      </div>
-      <br>
-
-
-      <h4>Links</h4>
-      <a class="footer-anchor" target="_blank" href="http://design.vishaldhatrika.me">
-            <img src="assets/images/pi.png" alt="Pinterest"><span>design.vishaldhatrika.me</span>
-      </a>
-      <a class="footer-anchor" target="_blank" href="https://blog.vishaldhatrika.me">
-            <img src="assets/images/bl.png" alt="Blog"><span>blog.vishaldhatrika.me</span>
-      </a>
-      <a class="footer-anchor" target="_blank" href="https://instagram.com/vishaldhatrika">
-            <img src="assets/images/ig.png" alt="Instagram"><span>@vishaldhatrika</span>
-      </a>
-      <a class="footer-anchor" target="_blank" href="https://linkedin.com/in/vishaldhatrika">
-            <img src="assets/images/li.png" alt="LinkedIn"><span>@vishaldhatrika</span>
-      </a>
-      <a class="footer-anchor" target="_blank" href="https://github.com/vishaldhatrika">
-            <img src="assets/images/gh.png" alt="GitHub"><span>@vishaldhatrika</span>
-      </a>
 </body>
 
 </html>

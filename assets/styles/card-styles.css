@@ -94,6 +94,21 @@
     background: var(--orange);
 }
 
+@media (max-width: 499px) {
+    .cards {
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+    }
+
+    .codingProfCont .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        max-width: 92vw;
+    }
+}
+
 @media (min-width: 500px) {
     .cards {
         grid-template-columns: 1fr;
@@ -169,5 +184,6 @@
 .footer-anchor:hover,
 .footer-anchor:active {
     background-color: var(--darkerblue);
+    text-decoration: none;
     color: white;
 }

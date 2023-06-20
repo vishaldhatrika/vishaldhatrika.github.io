@@ -190,6 +190,7 @@
 
 .BgBc:hover {
     background-image: url('../images/bg_bc.png');
+
 }
 
 .BgCh:hover {
@@ -207,7 +208,13 @@
 .BgImgCard:hover {
     background-repeat: no-repeat;
     background-size: contain;
+
     background-position: center;
     background-color: transparent;
     color: transparent;
+
+    border-color: transparent;
+    box-shadow: none;
+
+    filter: drop-shadow(8px 4px 20px rgba(131, 131, 131, 0.753));
 }

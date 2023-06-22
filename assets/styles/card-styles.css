@@ -217,4 +217,6 @@
     box-shadow: none;
 
     filter: drop-shadow(8px 4px 20px rgba(131, 131, 131, 0.753));
+
+    user-select: none;
 }

@@ -2,7 +2,7 @@
 
 ## Round Robin (priority based) simulator 
 
-            &&
+            &
 
 ## Round Robin (Non - Priority based) simulator
 

@@ -1,0 +1,26 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cpu scheduling simulator</title>
+    <link rel="stylesheet" href="home_style.css">
+</head>
+<body>
+    <h1>Cpu Scheduling Simulator</h1>
+    
+    <form id="processForm">
+    
+        <button style="--clr:#39FF14" type="button" onclick="startSimulation('fcfs')"><span>Simulate FCFS</span><i></i></button><br>
+        <button style="--clr:#FF44CC" type="button" onclick="startSimulation('sjf')"><span>Simulate SJF</span><i></i></button><br>
+        <button style="--clr:#0FF0FC" type="button" onclick="startSimulation('srtf')"><span>Simulate SRTF</span><i></i></button><br>
+        <button style="--clr:#8A2BE2" type="button" onclick="startSimulation('priority')"><span>Simulate Priority</span><i></i></button><br>
+        <button style="--clr:#39FF14" type="button" onclick="startSimulation('roundrobin')"><span>Simulate RoundRobin</span><i></i></button><br>
+        <button style="--clr:#FF44CC" type="button" onclick="startSimulation('roundrobinNP')"><span>Simulate RoundRobinNP</span><i></i></button><br>
+        <button style="--clr:#0FF0FC" type="button" onclick="startSimulation('lrtf')"><span>Simulate LRTF</span><i></i></button><br>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>

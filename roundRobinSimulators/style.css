@@ -1,0 +1,120 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    color: #fffefe;
+    background: #27272c;
+    text-align: center;
+    margin: 50px;
+}
+  
+
+h1 {
+    color: #fffefe;
+}
+
+
+label, input, select, button {
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for process visualization and ready queue pipeline */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+.pipeline-horizontal {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.ready-queue {
+    display: flex;
+}
+
+
+.process {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    margin-right: 5px;
+    text-align: center;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: processAnimation;
+    animation-timing-function: linear;
+}
+
+@keyframes processAnimation {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.process-horizontal {
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    margin-right: 5px;
+    text-align: center;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: processAnimationHorizontal;
+    animation-timing-function: linear;
+}
+
+@keyframes processAnimationHorizontal {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.space {
+    height: 20px;
+}
+
+/* Add or update styles in your styles.css file */
+
+
+/* Add or update these styles in your existing CSS file */
+.process-pipeline {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    align-items: flex-start;
+}
+
+/* Add this style to highlight the current process in the preemptive pipeline */
+.current-process {
+    background-color: #FFD700;
+}

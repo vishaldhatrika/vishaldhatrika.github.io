@@ -1,9 +1,7 @@
 # Round Robin Algorithms Simulator
 
 ## Round Robin (priority based) simulator 
-
-            &
-
+                   and
 ## Round Robin (Non - Priority based) simulator
 
 ---

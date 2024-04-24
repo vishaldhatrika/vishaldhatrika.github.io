@@ -8,9 +8,7 @@
     --blue: #286ef1;
     --lightblue: #578ff8;
     --darkerblue: #00086c;
-
 }
-
 
 .container {
     max-width: 85vw;
@@ -24,11 +22,9 @@
     padding: 0 10px;
     margin: 0 auto;
     overflow: hidden;
-
 }
 
 .cards {
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 10px;
@@ -47,15 +43,28 @@
 
 }
 
+
+
 .card {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    background: var(--white);
+
+    color: var(--white);
+    
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    border-color: transparent;
     transition: all 0.2s;
     margin-bottom: 10px;
+
+
+    /* From https://css.glass */
+    background: rgba(166, 166, 166, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 
@@ -93,8 +102,8 @@
 .card:hover .card-link {
     background: var(--orange);
 }
-
-@media (max-width: 499px) {
+/* mobile  0-499px */
+@media (max-width: 499px) { 
     .cards {
         grid-template-columns: 1fr;
         grid-column-gap: 10px;
@@ -108,7 +117,7 @@
         max-width: 92vw;
     }
 }
-
+/* 500-700px  */
 @media (min-width: 500px) {
     .cards {
         grid-template-columns: 1fr;
@@ -123,7 +132,7 @@
         max-width: 92vw;
     }
 }
-
+/* 700-1100px */
 @media (min-width: 700px) {
     .cards {
         grid-template-columns: 1fr 1fr;
@@ -138,7 +147,7 @@
         max-width: 88vw;
     }
 }
-
+/* above 1100px */
 @media (min-width: 1100px) {
     .cards {
         grid-template-columns: 1fr 1fr 1fr;
@@ -154,69 +163,61 @@
     }
 }
 
-.footer-anchor {
-    display: inline-block;
-    text-decoration: none;
+.codingProfCont .cards .card {
+    background: rgba(166, 166, 166, 0.445);
+
+}
+.codingProfCont .cards .card .card-content img {
+    margin-bottom: 10px;
+}
+
+.cards-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 0;
+    /* margin: 0 -10px; */
+    position: relative;
+}
+
+.my-carousel-item{
+    margin: 10px;
+    scroll-snap-align: center;
+    min-width: 30%;
+    
+}
+.scrollBtn{
+    position: sticky;
+    z-index: 200;
+    
     border: none;
+    
     border-radius: 5px;
-    background-color: #286ef15e;
-    margin-bottom: 6px;
-    padding: 6px;
+    padding: 20px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    background: rgba(78, 78, 78, 0.472);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 6px );
+    
+}
+.scrollBtnLeft{
+left: 0px;
+border-radius: 30px 0 0 30px;
+}
+.scrollBtnRight{
+right: 0px;
+border-radius: 0 30px 30px 0;
 }
 
-.footer-anchor img {
-    display: inline;
-    vertical-align: middle;
-    height: 24px;
-    margin-right: 5px;
-}
-
-.footer-anchor span {
-    display: inline;
-    vertical-align: middle;
-}
-
-.footer-anchor:link,
-.footer-anchor:visited {
-    color: black;
-}
-
-.footer-anchor:hover,
-.footer-anchor:active {
-    background-color: var(--darkerblue);
-    text-decoration: none;
-    color: white;
-}
-
-.BgBc:hover {
-    background-image: url('../images/bg_bc.png');
-
-}
-
-.BgCh:hover {
-    background-image: url('../images/bg_ch.png');
-}
-
-.BgAr:hover {
-    background-image: url('../images/bg_ar.gif');
-}
-
-.BgCl:hover {
-    background-image: url('../images/bg_cl.png');
-}
-
-.BgImgCard:hover {
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    background-position: center;
-    background-color: transparent;
-    color: transparent;
-
-    border-color: transparent;
-    box-shadow: none;
-
-    filter: drop-shadow(8px 4px 20px rgba(131, 131, 131, 0.753));
-
-    user-select: none;
+.card-img-top{
+    min-height: 150px;
+    max-height: 150px;
+    object-fit: contain;
+    opacity: 0.88;
 }

@@ -25,31 +25,25 @@
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10px;
+    
+    display: inline-block;
+    
     padding: 0px;
     list-style: none;
+
     max-height: fit-content;
+    white-space: nowrap;
+
+    overflow-y: none;
+    overflow-x: none;
+    /* max-height: 126px; */
 }
-
-.codingProfCont .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 8px;
-    padding: 0px;
-    list-style: none;
-    max-height: fit-content;
-
-}
-
-
 
 .card {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    /* flex-direction: row; */
     padding: 10px;
-
+    
     color: var(--white);
     
     border-radius: 12px;
@@ -60,17 +54,25 @@
 
 
     /* From https://css.glass */
-    background: rgba(166, 166, 166, 0.15);
+    background: rgba(0, 0, 0, 0.41);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 }
-
+.codingProfCont .cards .card {
+    display: inline-block;
+    /* float: left; */
+    margin-right: 8px;
+    width: 210px;
+}
 
 .card:hover {
     color: var(--white);
-    background: var(--blue);
+    /* background: var(--blue); */
+    background: #35456b24;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
 }
 
 .card .card-title {
@@ -94,24 +96,35 @@
     text-decoration: none;
     color: white;
     background: var(--lightblue);
-    padding: 6px 12px;
-    border-radius: 8px;
+    border: 1px solid transparent;
+    background: #9999997e;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    padding: 2.5px 8px;
+    border-radius: 5px;
     transition: background 0.2s;
 }
 
-.card:hover .card-link {
-    background: var(--orange);
+.card-link:hover{
+    /* background: var(--orange); */
+    background-color: #1c1c1cb3;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.501);
 }
 /* mobile  0-499px */
 @media (max-width: 499px) { 
-    .cards {
+    /* .cards {
         grid-template-columns: 1fr;
         grid-column-gap: 10px;
     }
 
     .codingProfCont .cards {
         grid-template-columns: 1fr;
-    }
+    } */
 
     .container {
         max-width: 92vw;
@@ -119,14 +132,14 @@
 }
 /* 500-700px  */
 @media (min-width: 500px) {
-    .cards {
+    /* .cards {
         grid-template-columns: 1fr;
         grid-column-gap: 20px;
     }
 
     .codingProfCont .cards {
         grid-template-columns: 1fr 1fr;
-    }
+    } */
 
     .container {
         max-width: 92vw;
@@ -134,14 +147,14 @@
 }
 /* 700-1100px */
 @media (min-width: 700px) {
-    .cards {
+    /* .cards {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 30px;
     }
 
     .codingProfCont .cards {
         grid-template-columns: 1fr 1fr 1fr;
-    }
+    } */
 
     .container {
         max-width: 88vw;
@@ -149,26 +162,26 @@
 }
 /* above 1100px */
 @media (min-width: 1100px) {
-    .cards {
+    /* .cards {
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 40px;
     }
 
     .codingProfCont .cards {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+    } */
 
     .container {
         max-width: 85vw;
     }
 }
 
-.codingProfCont .cards .card {
-    background: rgba(166, 166, 166, 0.445);
-
-}
-.codingProfCont .cards .card .card-content img {
-    margin-bottom: 10px;
+.codingProfCont .cards .card .card-title img {
+    background: white;
+    padding: 3px;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    height: 60px;
 }
 
 .cards-carousel {
@@ -177,17 +190,25 @@
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    padding: 10px 0;
-    /* margin: 0 -10px; */
     position: relative;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+    overflow-x: hidden;
+
+    border-radius: 20px;
 }
 
 .my-carousel-item{
-    margin: 10px;
-    scroll-snap-align: center;
-    min-width: 30%;
+    margin: 0px;
+    margin-left: 10px;
     
+    scroll-snap-align: center;
+    min-width: 26%;
+    max-width: 320px;
 }
+
 .scrollBtn{
     position: sticky;
     z-index: 200;
@@ -195,24 +216,31 @@
     border: none;
     
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
 
-    margin-top: 0;
-    margin-bottom: 0;
+    
 
-    background: rgba(78, 78, 78, 0.472);
+    background: rgba(33, 33, 33, 0.41);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 5px );
-    -webkit-backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 5px );
     
 }
+.scrollBtn:hover{
+    background: rgba(78, 78, 78, 0.72);
+    backdrop-filter: blur( 14px );
+    -webkit-backdrop-filter: blur( 14px );
+}
+.scrollBtn:hover .material-symbols-rounded{
+    transform: scale(1.1);
+}
 .scrollBtnLeft{
-left: 0px;
-border-radius: 30px 0 0 30px;
+left: -2px;
+border-radius: 20px 0 0 20px;
 }
 .scrollBtnRight{
-right: 0px;
-border-radius: 0 30px 30px 0;
+right: -2px;
+border-radius: 0 20px 20px 0;
 }
 
 .card-img-top{

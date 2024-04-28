@@ -64,7 +64,12 @@
     display: inline-block;
     /* float: left; */
     margin-right: 8px;
-    width: 210px;
+    width: 170px;
+    background: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
+    /* border-radius: 0; */
 }
 
 .card:hover {
@@ -177,10 +182,10 @@
 }
 
 .codingProfCont .cards .card .card-title img {
-    background: white;
-    padding: 3px;
+    background: none;
+    padding: 1x;
     margin-bottom: 3px;
-    border-radius: 10px;
+    border-radius: 5px;
     height: 60px;
 }
 

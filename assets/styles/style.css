@@ -136,3 +136,14 @@ a.navbar-brand img {
     text-align: center;
     font-size: 1.8rem;
  }
+ .custom-link{
+    text-decoration-color: transparent;
+    color: rgb(153, 152, 255);
+    letter-spacing: 1px;
+    transition: all 0.55s;
+ }
+ .custom-link:hover{
+    color: rgb(234, 234, 234);
+    text-decoration-color: rgb(123, 123, 123);
+    
+ }

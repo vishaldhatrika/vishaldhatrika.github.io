@@ -246,6 +246,7 @@ border-radius: 20px 0 0 20px;
 .scrollBtnRight{
 right: -2px;
 border-radius: 0 20px 20px 0;
+margin-left: 10px;
 }
 
 .card-img-top{

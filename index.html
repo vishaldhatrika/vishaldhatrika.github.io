@@ -76,7 +76,7 @@
             <div class="container">
                   <br>
                   <h3 class="alegreya-regular">
-                        Hey there! I'm Vishal Dhatrika
+                        Vishal Dhatrika
                   </h3>
                   Technology. Engineering. Art. Innovation.
                   <br><br>
@@ -89,12 +89,13 @@
                         About Me
                         </div>
                         <div class="text-block-item">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, saepe mollitia cum tempora sapiente error, impedit qui harum quas, optio dolor et. Nam aliquam unde veniam dolore, beatae repellendus libero!
-                        Odio labore, sunt laborum recusandae omnis reprehenderit adipisci suscipit quia libero praesentium ratione distinctio quo modi ullam obcaecati, non, eligendi optio assumenda. Perferendis eligendi corrupti harum quo, sed animi velit.
-                        Unde dolorum consectetur minus velit. Sunt, quidem itaque quisquam cupiditate dolor in enim error quas, dolorem porro fugiat tempora dicta odit accusantium eaque voluptatum quo alias consectetur. Laboriosam, dolore modi.
-                        Temporibus labore odit nulla. Facilis, nisi quas esse dolorum quia odio asperiores magni iste aperiam commodi. Natus nobis reprehenderit nam unde sint ratione eaque? Et asperiores officiis consectetur molestias ea.
-                        Quisquam unde porro, iste excepturi, quia delectus doloremque fugiat saepe suscipit quam maxime cumque fugit eius qui, iure minus possimus vero perspiciatis asperiores dolorum aliquid velit animi sint pariatur. Repudiandae.
-                        </div>
+                              <p>
+                              Hi there! I'm Vishal, a creative problem-solver who thrives at the intersection of technology, engineering, innovation and art.  For me, innovation isn't just about creating new things, it's about creating them with beauty and purpose.
+                              I believe artistic sensibilities are essential when crafting user experiences, engineering solutions that are elegant as well as effective, and developing technologies that inspire and solve real-world problems.  This interdisciplinary approach fuels my passion for bringing ideas to life in a way that is both impactful and inspiring.
+                              </p>
+                              <p>
+                              My expertise lies in Software engineering, Web Development, Data Science and Analytics & User Interface Design.  I'm constantly seeking ways to leverage these skills to tackle complex challenges and make a positive social impact.</div>
+                              </p>
                   </div>
 
             
@@ -104,7 +105,7 @@
                   <h4 id="builds" class="alegreya-bold">Projects I worked on</h4>
                   <br>
                   <div class="cards-carousel">
-                        <button class="scrollBtn scrollBtnLeft" onclick="">
+                        <button class="scrollBtn scrollBtnLeft" onclick="scrollLeftProj()">
                               <span class="material-symbols-rounded">
                                     arrow_back
                               </span>
@@ -174,7 +175,7 @@
                                     <a href="#" class="btn btn-primary">Project Link</a>
                               </div>
                         </div>
-                        <button class="scrollBtn scrollBtnRight">
+                        <button class="scrollBtn scrollBtnRight" onclick="scrollRightProj()">
                               <span class="material-symbols-rounded">
                                     arrow_forward
                               </span>
@@ -348,34 +349,9 @@
       <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.js" integrity="sha512-YSRP21JuVGLYbjVo+AzW0RcVwPJM3FTlJ6JwU/EnUT2V2tpHFblsdXeEZvjTYDwDphK8ZFs2tS2+JvATwqSC+A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js" integrity="sha512-2sI5N95oT62ughlApCe/8zL9bQAXKsPPtZZI2KE3dznuZ8HpE2gTMHYzyVN7OoSPJCM1k9ZkhcCo3FvOirIr2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       
-      <script>
-      new Glide('.glide',{
-            type: 'carousel',
-            hoverpause: true,
-            autoplay: 2000,
-            perView: 3,
-            peek: {
-                  before: 300,
-                  after: 300
-            },
-            breakpoints: {
-    1200: {
-      perView: 2,
-      peek: {
-            before: 150,
-            after: 150
-      }
-    },
-    670: {
-      perView: 1,
-      peek: {
-            before: 100,
-            after: 100
-      }
-    }
-  }
-      }).mount()
-      </script>
+
+      <script src="./assets/scripts/customGlideScript.js"></script>
+      <script src="./assets/scripts/customScrollScript.js"></script>
 
 </body>
 </html>

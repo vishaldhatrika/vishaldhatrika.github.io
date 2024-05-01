@@ -353,21 +353,31 @@
       <script src="./assets/scripts/customScrollScript.js"></script>
   
       <script>
-            fetch('https://blog.vishaldhatrika.me/feeds/posts/default')
-            .then(response => response.text())
-            .then(data => {
-            const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(data, 'text/xml');
-            const entries = xmlDoc.getElementsByTagName('entry');
+            // fetch('https://blog.vishaldhatrika.me/feeds/posts/default?alt=json-in-script',{ mode: 'cors'})
+            // .then(response => response.text())
+            // .then(data => {
+            // const parser = new DOMParser();
+            // const xmlDoc = parser.parseFromString(data, 'text/xml');
+            // const entries = xmlDoc.getElementsByTagName('entry');
 
-            for (let i = 0; i < entries.length; i++) {
-                  const title = entries[i].getElementsByTagName('title')[0].textContent;
-                  const content = entries[i].getElementsByTagName('content')[0].textContent;
-                  console.log('Title:', title);
-                  console.log('Content:', content);
-            }
+            // for (let i = 0; i < entries.length; i++) {
+            //       const title = entries[i].getElementsByTagName('title')[0].textContent;
+            //       const content = entries[i].getElementsByTagName('content')[0].textContent;
+            //       console.log('Title:', title);
+            //       console.log('Content:', content);
+            // }
+            // })
+            // .catch(error => console.error('Error fetching posts:', error));
+            const apiKey = 'AIzaSyB-15B1I83PDmCMIlI7cw-074T528fLO14';
+            const blogId = '1134659980298051767';
+
+            fetch(`https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts?key=${apiKey}`)
+            .then(response => response.json())
+            .then(data => {
+            console.log('Posts:', data.items);
             })
             .catch(error => console.error('Error fetching posts:', error));
+
       </script>
           
 

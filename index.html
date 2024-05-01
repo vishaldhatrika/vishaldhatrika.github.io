@@ -293,18 +293,22 @@
             </div>
             <hr>
             <div class="blog-posts">
-                  <div id="posts-container">
-
-                  </div>
+                  
 
                   <h4 id="writes" class="alegreya-bold">
                         <span class="material-symbols-rounded"><a href="https://blog.vishaldhatrika.me" style="text-decoration: none; color: white;">rss_feed</a></span>
                         Latest blog posts
                   </h4>
-                  <div class="blog-post-item">
+                  <div id="posts-container">
+
+                  </div>
+                  
+                  <!-- <div class="blog-post-item">
                         <p>
-                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium dolores beatae laboriosam velit veniam sequi harum, libero dicta tempora voluptatibus nobis facilis, quidem magnam dignissimos molestias iure animi impedit eos?
-                              Odit doloremque voluptatem ab praesentium omnis minima inventore sunt sapiente natus ipsum hic nihil, qui soluta, facilis delectus. Voluptas, impedit? Numquam magni dolor debitis ratione quidem dolores eveniet dolorem error?
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem unde totam cumque hic harum, voluptates, sequi eveniet illo eum ducimus molestiae qui praesentium ex nulla necessitatibus. Suscipit tempore repellat nisi.
+                              Perspiciatis, vitae ea facilis esse adipisci doloremque magnam reprehenderit mollitia nulla enim illo alias voluptatem temporibus optio debitis et blanditiis reiciendis. Quae consequatur blanditiis officiis corporis est? Suscipit, laudantium nihil!
+                              Possimus a repudiandae vero, aut nisi animi. Qui voluptatum dicta, ut, placeat accusamus recusandae nemo numquam pariatur ea nobis, ducimus dolore quasi aliquid dolorum officiis animi possimus esse voluptates! Ullam!
+
                         </p>
                   </div>
                   <div class="blog-post-item">
@@ -314,7 +318,7 @@
                               Possimus a repudiandae vero, aut nisi animi. Qui voluptatum dicta, ut, placeat accusamus recusandae nemo numquam pariatur ea nobis, ducimus dolore quasi aliquid dolorum officiis animi possimus esse voluptates! Ullam!
 
                         </p>
-                  </div>
+                  </div> -->
                   <span class="alegreya-regular">
                         More posts at: &nbsp;&nbsp;<a class="alegreya-bold custom-link" href="https://blog.vishaldhatrika.me">https://blog.vishaldhatrika.me</a>
                   </span>
@@ -351,34 +355,7 @@
 
       <script src="./assets/scripts/customGlideScript.js"></script>
       <script src="./assets/scripts/customScrollScript.js"></script>
-  
-      <script>
-            // fetch('https://blog.vishaldhatrika.me/feeds/posts/default?alt=json-in-script',{ mode: 'cors'})
-            // .then(response => response.text())
-            // .then(data => {
-            // const parser = new DOMParser();
-            // const xmlDoc = parser.parseFromString(data, 'text/xml');
-            // const entries = xmlDoc.getElementsByTagName('entry');
-
-            // for (let i = 0; i < entries.length; i++) {
-            //       const title = entries[i].getElementsByTagName('title')[0].textContent;
-            //       const content = entries[i].getElementsByTagName('content')[0].textContent;
-            //       console.log('Title:', title);
-            //       console.log('Content:', content);
-            // }
-            // })
-            // .catch(error => console.error('Error fetching posts:', error));
-            const apiKey = 'AIzaSyB-15B1I83PDmCMIlI7cw-074T528fLO14';
-            const blogId = '1134659980298051767';
-
-            fetch(`https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts?key=${apiKey}`)
-            .then(response => response.json())
-            .then(data => {
-            console.log('Posts:', data.items);
-            })
-            .catch(error => console.error('Error fetching posts:', error));
-
-      </script>
+      <script src="./assets/scripts/blogPostFetcher.js"></script>
           
 
 </body>

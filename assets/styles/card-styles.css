@@ -212,6 +212,25 @@
     scroll-snap-align: center;
     min-width: 26%;
     max-width: 320px;
+
+    display: flex;
+}
+
+.my-carousel-item .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-carousel-item .card-body a {
+    margin-top: auto;
+    color: white;
+    background: #202020bc;
+    border: 1px solid transparent;
+}
+.my-carousel-item .card-body a:hover, .my-carousel-item .card-body a:focus{
+    color: white;
+    background: black;
+    border: 1px solid white;
 }
 
 .scrollBtn{

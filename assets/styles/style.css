@@ -7,6 +7,8 @@ body {
     text-align: center;
     color: white;
 
+    min-height: 100vh;
+
     font-family: 'Nunito', sans-serif;
 
     /* text-shadow: 6px 4px 10px rgba(74,74,74,0.85); */

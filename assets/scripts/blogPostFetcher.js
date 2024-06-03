@@ -22,7 +22,7 @@ fetch(`https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts?key=${apiKey}
             <p> 
                   ${truncateString(stripHtmlTags(post.content), maxCharacters)}
                   <br>
-                  <a href="${post.url}" target="_blank" rel="noopener noreferrer">Read more</a>
+                  <a href="${post.url}" target="_blank" class="btn btn-carousel" rel="noopener noreferrer">Continue reading..</a>
                   </p>
             
       `;

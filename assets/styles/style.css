@@ -149,3 +149,20 @@ a.navbar-brand img {
     text-decoration-color: rgb(123, 123, 123);
     
  }
+
+ .blogContinueLink{
+    color: black; /* Set link color */
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Set position relative for pseudo-element */
+}
+
+.blogContinueLink::before {
+    content: ''; /* Add content for pseudo-element */
+    position: absolute; /* Position pseudo-element */
+    width: 100%; /* Set width to cover entire link text */
+    height: 2px; /* Set height of the glow */
+    background-color: white; /* Set glow color */
+    bottom: -2px; /* Position below the text */
+    left: 0; /* Align with link text */
+    opacity: 0.5; /* Set constant opacity for glow */
+}

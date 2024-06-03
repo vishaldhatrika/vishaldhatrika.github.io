@@ -221,13 +221,13 @@
     flex-direction: column;
 }
 
-.my-carousel-item .card-body a {
+.btn-carousel {
     margin-top: auto;
     color: white;
     background: #202020bc;
     border: 1px solid transparent;
 }
-.my-carousel-item .card-body a:hover, .my-carousel-item .card-body a:focus{
+.btn-carousel:hover, .btn-carousel:focus{
     color: white;
     background: black;
     border: 1px solid white;

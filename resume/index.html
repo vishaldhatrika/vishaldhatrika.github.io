@@ -75,7 +75,7 @@
         <div class="container">
             <br><br>
             <h5>Resume</h5>
-            <object data="../assets/docs/VishalDhatrika-Resume.pdf" type="application/pdf" width="80%" height="80vh">
+            <!-- <object class="resumeViewerObject" data="../assets/docs/VishalDhatrika-Resume.pdf" type="application/pdf">
                   <p>
                         Unable to display file on this browser. 
                         <a class="footer-anchor" target="_blank" rel="noopener noreferrer" href="../assets/docs/SWE-VishalDhatrika-Resume.pdf">
@@ -83,7 +83,31 @@
                         </a>
                         instead.
                   </p>
-            </object>
+            </object> -->
+
+
+            
+            <!-- <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+            <script type="text/javascript">
+                  document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+                        var adobeDCView = new AdobeDC.View({clientId: "901e63321788421c9b8cd317a58496cd"});
+                        adobeDCView.previewFile({
+                              content:{location: {url: "https://vishaldhatrika.me/assets/docs/VishalDhatrika-Resume.pdf"}},
+                              metaData:{fileName: "VishalDhatrika-Resume.pdf"}
+                        }, {embedMode: "LIGHT_BOX"});
+                  });
+            </script> -->
+
+            <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
+            <script type="text/javascript">
+                  document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+                        var adobeDCView = new AdobeDC.View({clientId: "<YOUR_CLIENT_ID>"});
+                        adobeDCView.previewFile({
+                              content:{location: {url: "https://vishaldhatrika.me/assets/docs/VishalDhatrika-Resume.pdf"}},
+                              metaData:{fileName: "VishalDhatrika-Resume.pdf"}
+                        }, {embedMode: "LIGHT_BOX", defaultViewMode: "FIT_WIDTH", exitPDFViewerType: "RETURN"});
+                  });
+            </script>
         </div>
         <hr>
         <div class="container">

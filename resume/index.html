@@ -85,16 +85,19 @@
                   </p>
             </object> -->
 
+
             <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
-            <script type="text/javascript">
-                  document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-                        var adobeDCView = new AdobeDC.View({clientId: "901e63321788421c9b8cd317a58496cd"});
-                        adobeDCView.previewFile({
-                              content:{location: {url: "https://vishaldhatrika.me/assets/docs/VishalDhatrika-Resume.pdf"}},
-                              metaData:{fileName: "VishalDhatrika-Resume.pdf"}
-                        }, {embedMode: "LIGHT_BOX", defaultViewMode: "FIT_WIDTH", exitPDFViewerType: "RETURN"});
-                  });
-            </script>
+            <script src="../assets/scripts/openPdfWindow.js"></script>
+
+            <br><br>
+
+            <a class="footer-anchor pdfBtn" onclick="openPdfWindow()">
+                  <span>Open Resume (Abode Reader)</span>
+            </a>
+            <br><br>
+            <a class="footer-anchor" target="_blank" rel="noopener noreferrer" href="../assets/docs/VishalDhatrika-Resume.pdf">
+                  <span>Download Resume</span>
+            </a>
         </div>
         <hr>
         <div class="container">

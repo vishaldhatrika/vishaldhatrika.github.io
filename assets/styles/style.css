@@ -132,31 +132,47 @@ a.navbar-brand img {
     padding: 10px;
 }
 
- .text-block-item:nth-child(1){
+.text-block-item:nth-child(1){
     line-height: 100%;
     vertical-align: middle;
     text-align: center;
     font-size: 1.8rem;
- }
- .custom-link{
+}
+.custom-link{
     text-decoration-color: transparent;
     color: rgb(153, 152, 255);
     letter-spacing: 1px;
     transition: all 0.55s;
- }
- .custom-link:hover{
+}
+.custom-link:hover{
     color: rgb(234, 234, 234);
     text-decoration-color: rgb(123, 123, 123);
-    
- }
 
- .blogContinueBtn{
+}
+
+.blogContinueBtn{
     float: right;
 }
 
-.resumeViewerObject{
+.pdfViewerObject{
     width: 100%;
     height: 60vh;
     border: none;
     border-radius: 15px;
+}
+
+.pdfBtn, .pdfBtn:link, .pdfBtn:visited {
+    color: rgb(27, 27, 27);
+    background: rgba(211, 83, 74, 0.9);
+    border: 1.3px solid rgba(255, 255, 255, 0.779);
+    padding: 12px;
+    transition: 
+        background 0.24s,
+        color 0.24s,
+        border 0.24s;
+}
+.pdfBtn:hover, .pdfBtn:active{
+    background: rgb(179, 12, 0);
+    color: rgb(255, 255, 255);
+    border: 1.3px solid rgb(255, 255, 255);
 }

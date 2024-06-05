@@ -176,3 +176,7 @@ a.navbar-brand img {
     color: rgb(255, 255, 255);
     border: 1.3px solid rgb(255, 255, 255);
 }
+
+.spacerCustom{
+    height: 4rem;
+}

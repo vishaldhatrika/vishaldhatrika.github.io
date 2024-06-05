@@ -33,7 +33,8 @@
     
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navUlId">
+<body>
+      <!-- data-bs-spy="scroll" data-bs-target="#navUlId" -->
       <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark" id="navId">
             <a class="navbar-brand ms-1" href="../index.html">
                   <img src="../assets/images/icon.png" class="d-inline-block align-middle"
@@ -61,7 +62,7 @@
                               <a class="nav-link me-1" href="../index.html#writes">Writes</a>
                         </li>
                         <li class="nav-item">
-                              <a class="nav-link me-1" href="../index.html#connect">Connects</a>
+                              <a class="nav-link me-1" href="#connect">Connects</a>
                         </li>
                         <li class="nav-item">
                               <a class="nav-link me-1" href="#resume">Resume</a>
@@ -73,19 +74,9 @@
 
     <div>
         <div class="container">
-            <br><br>
-            <h5 id="resume">Resume</h5>
-            <!-- <object class="resumeViewerObject" data="../assets/docs/VishalDhatrika-Resume.pdf" type="application/pdf">
-                  <p>
-                        Unable to display file on this browser. 
-                        <a class="footer-anchor" target="_blank" rel="noopener noreferrer" href="../assets/docs/SWE-VishalDhatrika-Resume.pdf">
-                              <span>Download PDF</span>
-                        </a>
-                        instead.
-                  </p>
-            </object> -->
-
-
+            
+            <div class="spacerCustom" id="resume"></div>
+            <h5>Resume</h5>
             <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
             <script src="../assets/scripts/openPdfWindow.js"></script>
 
@@ -98,10 +89,12 @@
             <a class="footer-anchor" target="_blank" rel="noopener noreferrer" href="../assets/docs/VishalDhatrika-Resume.pdf">
                   <span>Download Resume</span>
             </a>
-        </div>
+           
+          </div>
         <hr>
         <div class="container">
-            <h4 id="connect" class="alegreya-bold">Know more, or connect with me!</h4>
+            <div class="spacerCustom" id="connect"></div>
+            <h4 class="alegreya-bold">Know more, or connect with me!</h4>
             <br>
             <a class="footer-anchor" target="_blank" rel="noopener noreferrer"
                   href="https://linkedin.com/in/vishaldhatrika">

@@ -224,6 +224,7 @@ margin-left: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
 }
 
 
@@ -253,6 +254,9 @@ margin-left: 10px;
     .my-carousel-item{
         min-width: 60%;
     }
+    .testimonial-container{
+        flex-direction: column;
+    }
 }
 /* 500-700px  */
 @media (min-width: 500px) {
@@ -278,6 +282,9 @@ margin-left: 10px;
     .my-carousel-item{
         min-width: 52%;
     }
+    .testimonial-container{
+        flex-direction: column;
+    }
 }
 /* 700-1100px */
 @media (min-width: 700px) {
@@ -301,6 +308,9 @@ margin-left: 10px;
     }
     .my-carousel-item{
         min-width: 38%;
+    }
+    .testimonial-container{
+        flex-direction: row;
     }
 
 }
@@ -326,5 +336,8 @@ margin-left: 10px;
     }
     .my-carousel-item{
         min-width: 28%;
+    }
+    .testimonial-container{
+        flex-direction: row;
     }
 }

@@ -216,7 +216,15 @@ margin-left: 10px;
     opacity: 0.88;
 }
 
-
+.testimonial-card{
+    max-width: 380px;
+    margin: 10px;
+}
+.testimonial-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 

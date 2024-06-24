@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.2" baseProfile="tiny-ps" id="uuid-94beaf7d-98d5-46fc-bdd0-48f8cc7e9053" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1918.61 1071.22">
+<!-- <svg version="1.2" baseProfile="tiny-ps" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"> <svg> -->
+<title>Vishal Dhatrika</title>
+<defs>
+<style>
+.uuid-547e4df0-b4bf-4322-82c6-376d3a636146{stroke:url(#uuid-de2f6258-f525-4512-8cc9-33f3a75cf1f2);}.uuid-547e4df0-b4bf-4322-82c6-376d3a636146,.uuid-aed5ae79-d882-4712-8b81-59ebccc12c50,.uuid-74e47948-918c-4a3d-8771-1c3a55a8e32a,.uuid-43dcbbdb-95d1-4f7a-ac74-7cdcab82ae91{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:95px;}.uuid-aed5ae79-d882-4712-8b81-59ebccc12c50{stroke:url(#uuid-da92727f-d2c6-48e2-bc65-eddcacb299b0);}.uuid-74e47948-918c-4a3d-8771-1c3a55a8e32a{stroke:url(#uuid-7e202a5b-1e35-4350-871e-6e6a012d91d9);}.uuid-43dcbbdb-95d1-4f7a-ac74-7cdcab82ae91{stroke:url(#uuid-173f127f-dccb-4906-a17c-4358daf06a27);}
+</style>
+<linearGradient id="uuid-de2f6258-f525-4512-8cc9-33f3a75cf1f2" x1="1044" y1="535.61" x2="1918.61" y2="535.61" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#040c6b"/>
+<stop offset="1" stop-color="#6fc4ec"/>
+</linearGradient>
+<linearGradient id="uuid-173f127f-dccb-4906-a17c-4358daf06a27" x1="1244" y1="534.72" x2="1711" y2="534.72" xlink:href="#uuid-de2f6258-f525-4512-8cc9-33f3a75cf1f2"/>
+<linearGradient id="uuid-da92727f-d2c6-48e2-bc65-eddcacb299b0" x1="0" y1="543.57" x2="914.34" y2="543.57" xlink:href="#uuid-de2f6258-f525-4512-8cc9-33f3a75cf1f2"/>
+<linearGradient id="uuid-7e202a5b-1e35-4350-871e-6e6a012d91d9" x1="221.14" y1="279.59" x2="704.99" y2="279.59" xlink:href="#uuid-de2f6258-f525-4512-8cc9-33f3a75cf1f2"/>
+</defs>
+<path class="uuid-547e4df0-b4bf-4322-82c6-376d3a636146" d="m1291.5,1018.72h80l5.44.33c272.92,0,494.17-217.49,494.17-485.78S1649.87,47.5,1376.94,47.5l-.44.22-282,4-3,972"/>
+<path class="uuid-43dcbbdb-95d1-4f7a-ac74-7cdcab82ae91" d="m1291.5,623.72v-367h199v.18c102.8,52.17,173,157,173,277.82s-70.01,225.37-172.59,277.61l-.41.39h-199"/>
+<polyline class="uuid-aed5ae79-d882-4712-8b81-59ebccc12c50" points="866.84 63.41 469.84 1023.41 444.5 1023.72 47.5 63.72"/>
+<polyline class="uuid-74e47948-918c-4a3d-8771-1c3a55a8e32a" points="657.49 51.71 469.08 507.32 457.05 507.47 268.64 51.86"/>
+</svg>

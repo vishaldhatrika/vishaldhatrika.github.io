@@ -163,16 +163,16 @@ a.navbar-brand img {
 
 .pdfBtn, .pdfBtn:link, .pdfBtn:visited {
     color: rgb(27, 27, 27);
-    background: rgba(211, 83, 74, 0.9);
+    background: rgba(108, 74, 211, 0.9);
     border: 1.3px solid rgba(255, 255, 255, 0.779);
-    padding: 12px;
+    /* padding: 12px; */
     transition: 
         background 0.24s,
         color 0.24s,
         border 0.24s;
 }
 .pdfBtn:hover, .pdfBtn:active{
-    background: rgb(179, 12, 0);
+    background: rgb(108, 74, 211);
     color: rgb(255, 255, 255);
     border: 1.3px solid rgb(255, 255, 255);
 }

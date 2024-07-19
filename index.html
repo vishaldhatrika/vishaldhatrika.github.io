@@ -314,18 +314,32 @@
                         </ul>
                         <br>
                   </div>
-                  <!-- nav bullets -->
-                  <div class="glide__bullets" data-glide-el="controls[nav]">
-                        <button class="glide__bullet" data-glide-dir="=0"></button>
-                        <button class="glide__bullet" data-glide-dir="=1"></button>
-                        <button class="glide__bullet" data-glide-dir="=2"></button>
-                        <button class="glide__bullet" data-glide-dir="=3"></button>
-                        <button class="glide__bullet" data-glide-dir="=4"></button>
-                        <button class="glide__bullet" data-glide-dir="=5"></button>
-                        <button class="glide__bullet" data-glide-dir="=6"></button>
-                        <button class="glide__bullet" data-glide-dir="=7"></button>
-                        
-                  </div>
+                  <div id="navBtnsParent">
+                        <div class="glide__arrows" data-glide-el="controls">
+                              <button id="slideBack" aria-label="Scroll left Coding Profile" class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                    <span class="material-symbols-rounded">
+                                          arrow_back
+                                    </span>
+                              </button>
+                        </div>
+                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                              <button class="glide__bullet" aria-label="0th Coding Profile" data-glide-dir="=0"></button>
+                              <button class="glide__bullet" aria-label="1st Coding Profile" data-glide-dir="=1"></button>
+                              <button class="glide__bullet" aria-label="2nd Coding Profile" data-glide-dir="=2"></button>
+                              <button class="glide__bullet" aria-label="3rd Coding Profile" data-glide-dir="=3"></button>
+                              <button class="glide__bullet" aria-label="4th Coding Profile" data-glide-dir="=4"></button>
+                              <button class="glide__bullet" aria-label="5th Coding Profile" data-glide-dir="=5"></button>
+                              <button class="glide__bullet" aria-label="6th Coding Profile" data-glide-dir="=6"></button>
+                              <button class="glide__bullet" aria-label="7th Coding Profile" data-glide-dir="=7"></button>  
+                        </div>
+                        <div class="glide__arrows" data-glide-el="controls">
+                              <button id="slideForward" aria-label="Scroll right Coding Profile" class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                    <span class="material-symbols-rounded">
+                                          arrow_forward
+                                    </span>
+                              </button>
+                        </div>
+                  </div>  
             </div>
             <hr>
             <div class="blog-posts">

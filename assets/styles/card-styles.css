@@ -132,7 +132,7 @@
 
 .cards-carousel {
     display: flex;
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
@@ -141,7 +141,6 @@
     padding-top: 0;
     padding-bottom: 0;
 
-    overflow-x: hidden;
 
     border-radius: 20px;
 }

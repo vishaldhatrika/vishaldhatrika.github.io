@@ -1,26 +1,68 @@
-new Glide('.glide',{
-    type: 'carousel',
-    hoverpause: true,
-    autoplay: 2000,
-    perView: 3,
-    peek: {
-          before: 300,
-          after: 300
-    },
-    breakpoints: {
-          1200: {
-                perView: 2,
-                peek: {
-                      before: 150,
-                      after: 150
-                }
-          },
-          670: {
-                perView: 1,
-                peek: {
-                      before: 100,
-                      after: 100
-                }
-          }
-    }
+new Glide('#glideTechTools',{
+      type: 'carousel',
+      animationTimingFunc: 'linear',
+      animateDuration: 1500,
+      hoverpause: true,
+      autoplay: 1500,
+      perView: 7,
+      peek: {
+            before: 0,
+            after: 0
+      },
+      breakpoints: {
+            1450: {
+                  perView: 6,
+            },
+            1300: {
+                  perView: 5,
+            },
+            1000: {
+                  perView: 4,
+            },
+            835: {
+                  perView: 3,
+            },
+            670: {
+                  perView: 2,
+            },
+            500: {
+                  perView: 1,
+            }
+      }
+}).mount();
+
+
+
+
+new Glide('#glideCodeProfiles',{
+      type: 'carousel',
+      animationTimingFunc: 'linear',
+      animateDuration: 1500,
+      hoverpause: true,
+      autoplay: 1500,
+      perView: 7,
+      peek: {
+            before: 0,
+            after: 0
+      },
+      breakpoints: {
+            1450: {
+                  perView: 6,
+            },
+            1300: {
+                  perView: 5,
+            },
+            1000: {
+                  perView: 4,
+            },
+            835: {
+                  perView: 3,
+            },
+            670: {
+                  perView: 2,
+            },
+            500: {
+                  perView: 1,
+            }
+      }
 }).mount();

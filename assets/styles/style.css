@@ -162,16 +162,16 @@ a.navbar-brand img {
 
 .pdfBtn, .pdfBtn:link, .pdfBtn:visited {
     color: rgb(27, 27, 27);
-    background: rgba(108, 74, 211, 0.9);
-    border: 1.3px solid rgba(255, 255, 255, 0.779);
-    /* padding: 12px; */
+    background: rgba(158, 133, 235, 0.7);
+    border: 1.3px solid transparent;
+    
     transition: 
         background 0.24s,
         color 0.24s,
         border 0.24s;
 }
 .pdfBtn:hover, .pdfBtn:active{
-    background: rgb(108, 74, 211);
+    background: rgb(121, 89, 215);
     color: rgb(255, 255, 255);
     border: 1.3px solid rgb(255, 255, 255);
 }

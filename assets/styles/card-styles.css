@@ -121,26 +121,48 @@
     padding-bottom: 0;
     border-radius: 20px;
 }
-#navBtnsParent{
+#navBtnsParent, #navBulletsParent{
     display: flex;
     justify-content: center;
     align-items: center; 
 }
 .glide__arrow{
     border: 0;
-    background-color: rgba(0, 0, 0, 0.41);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 50%;
+    background-color: transparent;
+    outline: none;
     padding: 0;
-    width: 20px;
-    height: 20px;
-    margin: 0px 8px;
-    box-shadow: 0.5px 0.5px 5px 2px rgba(133, 133, 133, 0.309);
+    width: 26px;
+    height: 26px;
+    margin: 0px 10px;
 }
 .glide__arrow span{
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 26px;
+    line-height: 26px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' -25,
+        'opsz' 24
+    ; 
+}
+.play_pause_btn{
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    padding: 0;
+    width: 26px;
+    height: 26px;
+    margin: 0px 10px;
+}
+.play_pause_btn span{
+    font-size: 26px;
+    line-height: 26px;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 600,
+        'GRAD' -25,
+        'opsz' 26
+    ;
 }
 .glide__arrows{
     display: flex;
@@ -148,20 +170,20 @@
     align-items: center;
 }
 .glide__bullet{
-    border: 0;
-    background-color: rgba(0, 0, 0, 0.41);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    border: 2.5px solid rgba(130, 130, 130, 0.577);
+    background-color: rgba(130, 130, 130, 0.577);
     border-radius: 50%;
     padding: 0;
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
     margin: 0 7px;
-    box-shadow: 0.5px 0.5px 5px 2px rgba(133, 133, 133, 0.309);
-
+    outline: none;
 }
 .glide__bullet--active{
-    background-color: rgba(255, 255, 255, 0.739);
+    border-color: rgb(222, 222, 222);
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
 }
 
 .my-carousel-item{

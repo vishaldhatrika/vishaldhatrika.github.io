@@ -179,3 +179,13 @@ a.navbar-brand img {
 .spacerCustom{
     height: 4rem;
 }
+
+.link-icon{
+    vertical-align: sub;
+    font-size: 18px !important;
+}
+.circle{
+    font-size: 14px !important;
+  font-variation-settings:
+  'FILL' 1
+}

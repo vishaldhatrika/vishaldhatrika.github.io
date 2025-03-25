@@ -260,6 +260,28 @@
     flex-direction: row;
 }
 
+.work-card{
+    max-width: 880px;
+    margin: 10px;
+    text-align: left;
+}
+.work-card h6{
+    margin-left: 24px;
+}
+.work-card p{
+    margin-left: 40px;
+}
+.work-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+.work-card:hover{
+    transform: scale(1.05);
+}
+
 /* mobile  0-499px */
 @media (max-width: 499px) { 
     .container {

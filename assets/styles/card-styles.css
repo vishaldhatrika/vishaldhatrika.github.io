@@ -1,397 +1,369 @@
 .container {
-    max-width: 85vw;
-    padding: 0 10px;
-    margin: 0 auto;
-    overflow: hidden;
+  max-width: 85vw;
+  padding: 0 10px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .codingProfCont {
-    max-width: 85vw;
-    padding: 0 10px;
-    margin: 0 auto;
-    overflow: hidden;
+  max-width: 85vw;
+  padding: 0 10px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .cards {
-    display: inline-block;
-    padding: 0px;
-    list-style: none;
-    max-height: fit-content;
-    white-space: nowrap;
-    overflow-y: none;
-    overflow-x: none;
-    /* max-height: 126px; */
+  display: inline-block;
+  padding: 0px;
+  list-style: none;
+  max-height: fit-content;
+  white-space: nowrap;
+  overflow-y: none;
+  overflow-x: none;
+  /* max-height: 126px; */
 }
 
 .card {
-    display: inline-block;
-    /* flex-direction: row; */
-    padding: 10px;
-    color: var(--white);
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
-    border-color: transparent;
-    transition: all 0.2s;
-    margin-bottom: 10px;
+  display: inline-block;
+  /* flex-direction: row; */
+  padding: 10px;
+  color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+  border-color: transparent;
+  transition: all 0.2s;
+  margin-bottom: 10px;
 
-    /* From https://css.glass */
-    background: rgba(0, 0, 0, 0.41);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.41);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 .codingProfCont .cards .card {
-    display: inline-block;
-    /* float: left; */
-    margin-right: 8px;
-    width: 170px;
-    background: none;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    box-shadow: none;
-    /* border-radius: 0; */
+  display: inline-block;
+  /* float: left; */
+  margin-right: 8px;
+  width: 170px;
+  background: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+  /* border-radius: 0; */
 }
 
 .card:hover {
-    color: var(--white);
-    /* background: var(--blue); */
-    background: #35456b24;
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+  color: var(--white);
+  /* background: var(--blue); */
+  background: #35456b24;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
 .card .card-title {
-    font-size: 20px;
-    margin-top: 2px;
+  font-size: 20px;
+  margin-top: 2px;
 }
 
 .card .card-content {
-    padding: 10px;
-    margin: 10px 0;
-    max-width: 88%;
-    display: contents;
+  padding: 10px;
+  margin: 10px 0;
+  max-width: 88%;
+  display: contents;
 }
 
 .card .card-link-wrapper {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 .card .card-link {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    background: var(--lightblue);
-    border: 1px solid transparent;
-    background: #9999997e;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: var(--lightblue);
+  border: 1px solid transparent;
+  background: #9999997e;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 
-    padding: 2.5px 8px;
-    border-radius: 5px;
-    transition: background 0.2s;
+  padding: 2.5px 8px;
+  border-radius: 5px;
+  transition: background 0.2s;
 }
 
-.card-link:hover{
-    background-color: #1c1c1cb3;
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    text-decoration: none;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.501);
+.card-link:hover {
+  background-color: #1c1c1cb3;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.501);
 }
-
 
 .codingProfCont .cards .card .card-title img {
-    background: none;
-    padding: 0;
-    margin-bottom: 3px;
-    border-radius: 5px;
-    height: 60px;
+  background: none;
+  padding: 0;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  height: 60px;
 }
 
 .cards-carousel {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    position: relative;
-    padding-top: 0;
-    padding-bottom: 0;
-    border-radius: 20px;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 20px;
 }
-#navBtnsParent, #navBulletsParent{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+#navBtnsParent,
+#navBulletsParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.glide__arrow{
-    border: 0;
-    background-color: transparent;
-    outline: none;
-    padding: 0;
-    width: 26px;
-    height: 26px;
-    margin: 0px 10px;
+.glide__arrow {
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  margin: 0px 10px;
 }
-.glide__arrow span{
-    font-size: 26px;
-    line-height: 26px;
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 300,
-        'GRAD' -25,
-        'opsz' 24
-    ; 
+.glide__arrow span {
+  font-size: 26px;
+  line-height: 26px;
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" -25, "opsz" 24;
 }
-.play_pause_btn{
-    border: 0;
-    background-color: transparent;
-    outline: none;
-    padding: 0;
-    width: 26px;
-    height: 26px;
-    margin: 0px 10px;
+.play_pause_btn {
+  border: 0;
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  margin: 0px 10px;
 }
-.play_pause_btn span{
-    font-size: 26px;
-    line-height: 26px;
-    font-variation-settings:
-        'FILL' 1,
-        'wght' 600,
-        'GRAD' -25,
-        'opsz' 26
-    ;
+.play_pause_btn span {
+  font-size: 26px;
+  line-height: 26px;
+  font-variation-settings: "FILL" 1, "wght" 600, "GRAD" -25, "opsz" 26;
 }
-.glide__arrows{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.glide__arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.glide__bullet{
-    border: 2.5px solid rgba(130, 130, 130, 0.577);
-    background-color: rgba(130, 130, 130, 0.577);
-    border-radius: 50%;
-    padding: 0;
-    width: 6px;
-    height: 6px;
-    margin: 0 7px;
-    outline: none;
+.glide__bullet {
+  border: 2.5px solid rgba(130, 130, 130, 0.577);
+  background-color: rgba(130, 130, 130, 0.577);
+  border-radius: 50%;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  margin: 0 7px;
+  outline: none;
 }
-.glide__bullet--active{
-    border-color: rgb(222, 222, 222);
-    background-color: transparent;
-    width: 10px;
-    height: 10px;
+.glide__bullet--active {
+  border-color: rgb(222, 222, 222);
+  background-color: transparent;
+  width: 10px;
+  height: 10px;
 }
 
-.my-carousel-item{
-    margin: 0px;
-    margin-left: 10px;
-    scroll-snap-align: center;
-    min-width: 26%;
-    max-width: 320px;
-    display: flex;
+.my-carousel-item {
+  margin: 0px;
+  margin-left: 10px;
+  scroll-snap-align: center;
+  min-width: 26%;
+  max-width: 320px;
+  display: flex;
 }
 
 .my-carousel-item .card-body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .btn-carousel {
-    margin-top: auto;
-    color: white;
-    background: #202020bc;
-    border: 1px solid transparent;
+  margin-top: auto;
+  color: white;
+  background: #202020bc;
+  border: 1px solid transparent;
 }
-.btn-carousel:hover, .btn-carousel:focus{
-    color: white;
-    background: black;
-    border: 1px solid white;
-}
-
-.scrollBtn{
-    position: sticky;
-    z-index: 200;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    background: rgba(33, 33, 33, 0.41);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 5px );
-    -webkit-backdrop-filter: blur( 5px );
-    
-}
-.scrollBtn:hover{
-    background: rgba(78, 78, 78, 0.72);
-    backdrop-filter: blur( 14px );
-    -webkit-backdrop-filter: blur( 14px );
-}
-.scrollBtn:hover .material-symbols-rounded{
-    transform: scale(1.1);
-}
-.scrollBtnLeft{
-    left: -2px;
-    border-radius: 20px 0 0 20px;
-}
-.scrollBtnRight{
-    right: -2px;
-    border-radius: 0 20px 20px 0;
-    margin-left: 10px;
+.btn-carousel:hover,
+.btn-carousel:focus {
+  color: white;
+  background: black;
+  border: 1px solid white;
 }
 
-.card-img-top{
-    min-height: 150px;
-    max-height: 150px;
-    object-fit: contain;
-    opacity: 0.88;
+.scrollBtn {
+  position: sticky;
+  z-index: 200;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background: rgba(33, 33, 33, 0.41);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.scrollBtn:hover {
+  background: rgba(78, 78, 78, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.scrollBtn:hover .material-symbols-rounded {
+  transform: scale(1.1);
+}
+.scrollBtnLeft {
+  left: -2px;
+  border-radius: 20px 0 0 20px;
+}
+.scrollBtnRight {
+  right: -2px;
+  border-radius: 0 20px 20px 0;
+  margin-left: 10px;
 }
 
-.testimonial-card{
-    max-width: 380px;
-    margin: 10px;
-}
-.testimonial-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+.card-img-top {
+  min-height: 150px;
+  max-height: 150px;
+  object-fit: contain;
+  opacity: 0.88;
 }
 
-.work-card{
-    max-width: 880px;
-    margin: 10px;
-    text-align: left;
+.testimonial-card {
+  max-width: 380px;
+  margin: 10px;
 }
-.work-card h6{
-    margin-left: 24px;
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
-.work-card p{
-    margin-left: 40px;
+
+.work-card {
+  max-width: 880px;
+  margin: 10px;
+  text-align: left;
 }
-.work-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: left;
+.work-card h6 {
+  margin-left: 24px;
 }
-.work-card:hover{
-    transform: scale(1.05);
+.work-card p {
+  margin-left: 40px;
+}
+.work-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+.work-card:hover {
+  transform: scale(1.05);
 }
 
 /* mobile  0-499px */
-@media (max-width: 499px) { 
-    .container {
-        max-width: 92vw;
-    }
-    .blog-posts, .text-block{
-        padding:  4px 2vw !important;
-    }
-    .text-block-item:nth-child(1){
-        display: block;
-        width: 100%;
-    }
-    .text-block-item:nth-child(2){
-        display: block;
-        width: 100%;
-    }
-    .blog-post-item {
-        width: 100%;
-        display: block;
-        padding: 14px;
-    }
-    .my-carousel-item{
-        min-width: 60%;
-    }
-    .testimonial-container{
-        flex-direction: column;
-    }
+@media (max-width: 499px) {
+  .container {
+    max-width: 92vw;
+  }
+  .text-block {
+    padding: 4px 2vw !important;
+  }
+  .text-block-item:nth-child(1) {
+    display: block;
+    width: 100%;
+  }
+  .text-block-item:nth-child(2) {
+    display: block;
+    width: 100%;
+  }
+  .my-carousel-item {
+    min-width: 60%;
+  }
+  .testimonial-container {
+    flex-direction: column;
+  }
 }
 
 /* 500-700px  */
 @media (min-width: 500px) {
-    .container {
-        max-width: 92vw;
-    }
-    .blog-posts, .text-block{
-        padding:  5px 3.5vw !important;
-    }
-    .text-block-item:nth-child(1){
-        display: block;
-        width: 100%;
-    }
-    .text-block-item:nth-child(2){
-        display: block;
-        width: 100%;
-    }
-    .blog-post-item {
-        width: 100%;
-        display: block;
-        padding: 12px;
-    }
-    .my-carousel-item{
-        min-width: 52%;
-    }
-    .testimonial-container{
-        flex-direction: column;
-    }
+  .container {
+    max-width: 92vw;
+  }
+  .text-block {
+    padding: 5px 3.5vw !important;
+  }
+  .text-block-item:nth-child(1) {
+    display: block;
+    width: 100%;
+  }
+  .text-block-item:nth-child(2) {
+    display: block;
+    width: 100%;
+  }
+  .my-carousel-item {
+    min-width: 52%;
+  }
+  .testimonial-container {
+    flex-direction: column;
+  }
 }
 
 /* 700-1100px */
 @media (min-width: 700px) {
-    .container {
-        max-width: 88vw;
-    }
-    .blog-posts, .text-block{
-        padding:  6px 5vw !important;
-    }
-    .text-block-item:nth-child(1){
-        display: table-cell;
-        width: 30%;
-    }
-    .text-block-item:nth-child(2){
-        display: table-cell;
-        width: 70%;
-    }
-    .blog-post-item {
-        width: 50%;
-        display: table-cell;
-    }
-    .my-carousel-item{
-        min-width: 38%;
-    }
-    .testimonial-container{
-        flex-direction: row;
-    }
+  .container {
+    max-width: 88vw;
+  }
+  .text-block {
+    padding: 6px 5vw !important;
+  }
+  .text-block-item:nth-child(1) {
+    display: table-cell;
+    width: 30%;
+  }
+  .text-block-item:nth-child(2) {
+    display: table-cell;
+    width: 70%;
+  }
+  .my-carousel-item {
+    min-width: 38%;
+  }
+  .testimonial-container {
+    flex-direction: row;
+  }
 }
 
 /* above 1100px */
 @media (min-width: 1100px) {
-    .container {
-        max-width: 85vw;
-    }
-    .blog-posts, .text-block{
-        padding:  6px 8vw !important;
-    }
-    .text-block-item:nth-child(1){
-        display: table-cell;
-        width: 40%;
-    }
-    .text-block-item:nth-child(2){
-        display: table-cell;
-        width: 60%;
-    }
-    .blog-post-item {
-        width: 50%;
-        display: table-cell;
-    }
-    .my-carousel-item{
-        min-width: 28%;
-    }
-    .testimonial-container{
-        flex-direction: row;
-    }
+  .container {
+    max-width: 85vw;
+  }
+  .text-block {
+    padding: 6px 8vw !important;
+  }
+  .text-block-item:nth-child(1) {
+    display: table-cell;
+    width: 40%;
+  }
+  .text-block-item:nth-child(2) {
+    display: table-cell;
+    width: 60%;
+  }
+  .my-carousel-item {
+    min-width: 28%;
+  }
+  .testimonial-container {
+    flex-direction: row;
+  }
 }

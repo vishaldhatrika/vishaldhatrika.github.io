@@ -41,8 +41,19 @@ hr {
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.92) !important;
+  background-color: rgba(0, 0, 0, 0.65) !important;
   color: white !important;
+  backdrop-filter: blur(12px);
+  background-blend-mode: overlay;
+  -webkit-backdrop-filter: blur(12px);
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 24px;
+  border-radius: 3rem;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2),
+    inset 0 4px 20px rgba(255, 255, 255, 0.3);
 }
 
 a.navbar-brand {
@@ -50,18 +61,25 @@ a.navbar-brand {
 }
 
 a.navbar-brand img {
-  width: 45px;
+  width: 60px;
   height: auto;
-  border-radius: 4px;
-  background: #ffffffd2;
-  padding: 0 3px;
-  margin: 0;
-  margin-left: 8px;
-  margin-right: 4px;
+  border-radius: 40px;
+  /* background: #dfdfdf27; */
+  padding: 0px;
+  margin: 0px;
+  margin-right: 1px;
 }
 .navbar-toggler {
   border: none;
+  outline: none;
+  box-shadow: none;
 }
+.navbar-toggler:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
 .footer-anchor {
   display: inline-block;
   text-decoration: none;
